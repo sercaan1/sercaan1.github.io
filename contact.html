@@ -7,15 +7,47 @@
     <title>Contact</title>
     <link rel="icon" href="https://icons.iconarchive.com/icons/graphics-vibe/developer/256/html-5-icon.png" type="image/png">
     <meta name="theme-color" content="#4285f4">
+    <style>
+        body{
+            background-color: lavender;
+        }
+        h1{
+            color: darkcyan;
+        }
+        button{
+            margin-left: 292px;
+            width: 80px;
+            height: 30px;
+            font-size: larger;
+        }
+        li {
+            font-size: larger;
+            line-height: 30px;
+        }
+        label{
+            font-size: larger;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color:darkcyan">Contact Details</h1>
+    <h1>Contact Details</h1>
     <ul>
         <li><b>Phone Number: </b> +90 546 601 0150</li>
         <li><b>Email Adress: </b> sercankarakuyu@gmail.com</li>
         <li><b>Adress: </b> Kazım Dirik Mah. Bornova / İzmir</li>
     </ul>
     <hr>
+    <br>
+    <div>
+        <form action="mailto:sercankarakuyu@gmail.com"; method="post"; enctype="text/plain"></form>
+        <label for="subject">Subject:</label>
+        <input style="width:296px" type="textarea" id="subject" name="subject">
+        <br><br>
+        <textarea style="margin-left:68px" name="text" id="text" cols="35" rows="15"></textarea>
+        <br>
+        <button>Send</button>
+    </div>
+    <br>
     <a href="./index.html">Main Page</a>
 </body>
 </html>
